@@ -1,0 +1,24 @@
+@import "../../assets/style/variables";
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: dashed;
+  background-color: #fafafa;
+  color: #7f7f7f;
+  outline: none;
+  text-align: center;
+  transition: border 0.24s ease-in-out;
+
+  &__message {
+    flex-grow: 1;
+  }
+
+  &__accepted {
+    color: $highlight-additional;
+  }
+}

@@ -1,0 +1,42 @@
+@import "./mixins.scss";
+@import "./rwd-760";
+
+h1 {
+  @include headings(70px);
+}
+
+h2 {
+  @include headings(50px);
+}
+
+h3 {
+  @include headings(40px);
+}
+
+h4 {
+  @include headings(38px);
+  font-weight: 700;
+}
+
+h5 {
+  @include headings(30px);
+}
+
+h6 {
+  @include headings(25px);
+}
+
+.rootLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}

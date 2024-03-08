@@ -1,0 +1,38 @@
+@import "./src/assets/style/variables";
+@import "./src/assets/style/mixins";
+
+.home {
+  &__container {
+    color: $text-color-main;
+    font-size: 24px;
+  }
+
+  &__header {
+    background-color: $page-bg-color-additional;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__userMessage {
+    padding-top: 20px;
+    color: $border-color-main;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.show {
+  margin-top: 20px;
+  &__item {
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: #671665;
+    padding-right: 20px;
+  }
+
+  &__value {}
+}
