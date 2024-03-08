@@ -3,6 +3,7 @@ import "./home.scss";
 import Dropzone from "./components/dropzone/Dropzone";
 import calcBADValues from "./BAD_alhorithm";
 import throttling from "./utils/throttling";
+import bzip2 from "./bzip2";
 
 const Home = () => {
   const [file, setFile] = useState(undefined);
@@ -14,7 +15,7 @@ const Home = () => {
   const handleUpload = (file) => {
     setFile(file);
   };
-
+  
   useEffect(() => {
     if (!file) return;
     const fName = file.name;

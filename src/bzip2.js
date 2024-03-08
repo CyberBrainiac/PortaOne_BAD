@@ -27,7 +27,7 @@
   THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-var bzip2 = {};
+const bzip2 = {};
 
 bzip2.array = function(bytes){
   var bit = 0, byte = 0;
@@ -260,3 +260,5 @@ bzip2.decompress = function(bits, size, len){
   }
   return output;
 }
+
+export default bzip2;
